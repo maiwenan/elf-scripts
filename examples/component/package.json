@@ -1,0 +1,20 @@
+{
+  "name": "component",
+  "description": "component",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "start": "elf-scripts build xx -e development"
+  },
+  "dependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "core-js": "^2.6.9",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.2",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.0.0"
+  }
+}
