@@ -3,6 +3,8 @@
 const path = require('path')
 const yargs = require('yargs')
 
+process.env.NODE_ENV = process.env.NODE_ENV || 'production'
+
 yargs
   .usage('Usage: elf-scripts <command> [options]')
   .option('env', {

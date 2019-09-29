@@ -6,7 +6,9 @@
     "src"
   ],
   "scripts": {
-    "start": "elf-scripts build xx -e development"
+    "start": "elf-scripts build xx -e development",
+    "umd": "elf-scripts umd",
+    "serve": "elf-scripts serve"
   },
   "dependencies": {
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
