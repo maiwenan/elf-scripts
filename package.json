@@ -1,17 +1,29 @@
 {
   "name": "elf-scripts",
   "version": "1.0.0",
-  "description": "",
+  "description": "bundle library happily with rollup",
   "bin": {
     "elf-scripts": "bin/elf-scripts.js"
   },
-  "main": "index.js",
+  "keywords": [
+    "rollup",
+    "react",
+    "vue",
+    "typescript",
+    "elf",
+    "library"
+  ],
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "main": "lib/ElfScripts.js",
   "scripts": {
     "lint": "eslint -f html -o ./report/eslint.html bin lib",
     "fix": "eslint -f html -o ./report/eslint.html --fix bin lib"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "maiwenan <maiwenan@gmail.com>",
+  "license": "MIT",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

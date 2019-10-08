@@ -13,7 +13,7 @@ yargs
   })
   .option('modern', {
     alias: 'm',
-    describe: 'bundle your lib with modern style'
+    describe: 'bundle your library with modern style'
   })
   .commandDir(path.resolve(__dirname, '../lib/cmds'))
   .demandCommand()
