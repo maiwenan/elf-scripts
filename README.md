@@ -71,22 +71,80 @@ Options:
 ```
 
 
-## elf.config.js
+## Options: elf.config.js
 
 ---
 
+### entry
+
+* Type: `String | String[] | { [entryName: string]: string }`
+
+* Default: `src/index.js`
+
+The bundle's entry point(s).
+
 ### name
 
-```js
-{ name: 'girl' }
-```
+* Type: `String`
 
-In which case, loading can be accessed from `store.state.girl`
+* Default: `package.json` name prop
 
-Defaults to `loading`
+Necessary for iife/umd bundles that exports values in which case it is the global variable name representing your bundle
 
+### serveDir
 
-## State Structure
+* Type: `String`
+
+* Default: `dist`
+
+The directory in which all generated bundle are placed. Only works for `serve` command.
+
+### outputDir
+
+* Type: `String`
+
+* Default: `lib`
+
+The directory in which all generated bundle are placed. Works for `build`, `iife`, `umd` command.
+
+### modes
+
+* Type: `String | String[]`
+* Default: `esm`
+
+Specifies the format of the generated bundle. Only works for `build` command. 
+
+The value can be one or more than one of the following:
+
+  * amd
+  * cjs
+  * esm
+  * system
+
+### configureRollup
+
+* Type: `Function | Object`
+* Default: `null`
+
+Being an Object, it will be merged into the final rollup config using `_.merge`
+
+Being a Function, it will receive the rollup config as the argument, and return an object as the rollup config
+
+### pluginOptions
+
+* Type: `Object`
+* Default: see default options structure
+
+The 3rd party plugin options
+
+### watchOptions
+
+* Type: `Object`
+* Default: see default options structure
+
+It is rollup's `watch-options`. See [#watch-options](https://rollupjs.org/guide/en/#watch-options)
+
+## Default Options Structure
 
 ```js
 module.exports = {
