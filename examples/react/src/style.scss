@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family: "grate";
+  src: url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAR0AAsAAAAABzAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY+VUpcY21hcAAAAYAAAABXAAABhnGv1IxnbHlmAAAB2AAAAK8AAAEUwi/5HmhlYWQAAAKIAAAALAAAADYSdy7IaGhlYQAAArQAAAAcAAAAJAfeA4RobXR4AAAC0AAAAAwAAAAMDAAAAGxvY2EAAALcAAAACAAAAAgATgCKbWF4cAAAAuQAAAAeAAAAIAEPADluYW1lAAADBAAAAUUAAAJtPlT+fXBvc3QAAARMAAAAJwAAADo9U12GeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGBye33+Rxdzwv4EhhrmBoQEozAiSAwD3jA0veJztkLERgDAMA99OSMExCAUDUTEAS1OSLYLiwBbo7q2z7ErABCSxiQx2YHTtSi3yxBx5jp8iN/y+6tkafC6ZbiXcNQq/lpjru3lva9CbrecAfwDu5xJ2AHicY2BiAALmlcz2DEoMOgwMjPqMaupqbPxMbOxsYvKM7Gzicoz2jOJi5nZAGXMzczM1VnF1dnN1e0Z5Ruaef4WsXDwS7IX/uNm5GDl36DCysknyPH7MxcXHx6izg52Jif/ff5W9e1VmXomLu8Ikr/qMi4WNg+eZKhM7lxTX5r9cXDzsbOXlrIzMorx/N3Nw84qev5ScfGmq/P798iBnMSK5jQiXEeMeYhwBACs6NOIAeJxjYGRgYADii+olZ+L5bb4ycLMwgMD1NaVuyDQLA7M9kOJgYALxABk6CLV4nGNgZGBgbvjfwBDDwgACQJKRARUwAwBHCQJsBAAAAAQAAAAEAAAAAAAAAABOAIp4nGNgZGBgYGbQZWBiAAEQyQWEDAz/wXwGAA0uAUkAAHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nGNgYoAALgbsgJmRiZGZkYWBpbgksYgTROimZebkMDAAADayBXEA") format("woff"); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+[class^="g-icon"] {
+
+  display: inline-block;
+  font-family: "grate";
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+}
+
+.g-icon-star:before { content: "\e7df"; }
+
+.g-icon-star-fill:before { content: "\e86a"; }
+
+.g-rate {
+  font-size: 0;
+  line-height: 1;
+
+  &.is-disabled {
+    .g-rate-item {
+      cursor: default;
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &-list {
+    display: inline-block;
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  &-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 18px;
+    color: #c6d1de;
+    cursor: pointer;
+    transition: .3s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  .is-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  &-text {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+}

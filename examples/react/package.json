@@ -1,0 +1,22 @@
+{
+  "name": "rate",
+  "description": "rate component",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "start": "elf-scripts build",
+    "umd": "elf-scripts umd",
+    "iife": "elf-scripts iife",
+    "serve": "elf-scripts serve"
+  },
+  "dependencies": {
+    "core-js": "^2.6.9",
+    "react": "^16.10.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.6.3"
+  }
+}

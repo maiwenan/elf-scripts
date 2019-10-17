@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es5",
+    "lib": ["es2017", "dom"],
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": "typings",
+    "experimentalDecorators": true
+  },
+  "files": [
+    "src/index.js"
+  ]
+}
