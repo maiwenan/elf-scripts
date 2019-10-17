@@ -121,6 +121,14 @@ The value can be one or more than one of the following:
   * esm
   * system
 
+### modules
+
+* Type: `Object[]`
+* Default: undefined
+
+Build the library in multi-module mode. Each item spacifies the `elf.config.js` attrs and extends `elf.config.js`
+attrs value
+
 ### configureRollup
 
 * Type: `Function | Object`
@@ -155,7 +163,7 @@ module.exports = {
   modes: 'esm',
   lintOnSave: false,
   configureRollup: null,
-  solution: [],
+  modules: undefined,
   pluginOptions: {
     replace: {},
     alias: {
